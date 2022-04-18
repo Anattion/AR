@@ -1,0 +1,133 @@
+.menu-principal {
+	background-color: #272626;
+	height: 100px;
+	width: 100%;
+	margin: 0 auto
+}
+
+body{
+	width: 100%;
+	height: 100%;
+}
+
+main{
+	position: relative;
+	margin:  0 auto;
+	width: 980px;
+}
+
+.logo {
+	width: 70%;
+	float: left;
+	vertical-align: left;
+}
+
+.icons ul li {
+	display: inline-block ;
+	float: right;
+	vertical-align: right;
+	width: 10%;
+	margin-left
+
+}
+
+ul{
+	padding: 0px!important;
+}
+.menu-urls{
+	border-bottom: 3px solid ;
+	color: #8b8b8b;
+	height: 80px;	
+}
+
+.menu-secundario {
+	background-color: #ffffff;
+	width: 980px;
+	margin: 0 auto;
+	padding: 16px;	
+}
+
+.item-menu ul li {
+	display: inline-block;
+	color: #8b8b8b;
+	margin-left: 15px;
+	height: 50px;
+}
+
+.item-menu ul li:hover {
+	border-bottom: 2px solid;
+	color: #00bac6;
+	
+}	
+
+.item-menu ul li a:hover {
+	color: #00bac6;
+
+}
+
+.item-menu ul li a {
+	color: #8b8b8b ;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-right: 35px;
+
+}
+
+.item-menu {
+	width: 70%;
+	float: left;
+	
+}
+
+.busca {
+	width: 30%;
+	float: right;
+	text-align: center;
+
+}
+
+.busca input{
+	height: 36px;
+	width: 350px;
+	padding: 12px;
+	background-image: url('../img/lupa.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position: 96%;
+	border: 1px solid #8b8b8b ;
+	
+}
+
+.col-100 {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+.form-group {
+	margin-left: 20px;
+
+}
+
+.btn-primary {
+	margin-left: 20px;
+}
+
+.row {
+	margin-left: 20px;
+}
+
+.consulta-produto{
+	padding: 20px;
+}
+
+.btn-cadastra {
+	position: relative;
+	text-align: right;	
+}
+
+.form-check-label {
+	margin-left: 20px;
+
+}
