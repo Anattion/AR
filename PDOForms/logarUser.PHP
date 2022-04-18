@@ -1,17 +1,20 @@
 <?php
 require_once "../PDO.php";
 
-$email = $_POST["InputEmail"];
-$senha = trim($_POST["InputPassword"]);
+$email = $_POST["username"];
+$senha = trim($_POST["password"]);
 $banco = new usePDO();
-$banco->execSQL("SELECT senha from usuario WHERE email = $email",'USER');
+$result = $banco->execSQL("SELECT senha from usuario WHERE email = '$email'",'USER');
+$aSenhas = $result->fetch();
+for ($i=0; $i < count($aSenhas) ; $i++) { 
+     $senha_banco = base64_decode($aSenhas[$i][0]);
+}
 
-$senha_banco = trim(($result->fetchAll()));	
-$senha_banco = base64_decode($senha_banco);
+
 
 if ( $senha = $senha_banco) {
-	header("location: ../login.php?sucesso=s");
+//	header("location: ../index.php?sucesso=s");
 } else {
-	header("location: ../login.php?error=s");
+//	header("location: ../login.php?error=".$senha_banco);
 }
 ?>
